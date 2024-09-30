@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tea Leaf Prediction System</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header>
+  <div class="logo">Tea Leaf Predictor</div>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Predictions</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="image-upload">
+    <h2>Upload Tea Leaf Image</h2>
+    <div class="drop-area">
+      <input type="file" id="fileInput" accept="image/*" multiple>
+      <label for="fileInput">Drag & Drop or Click to Upload</label>
+    </div>
+    <div id="uploadProgress"></div>
+  </section>
+
+  <section class="container-selection">
+    <h2>Select Container</h2>
+    <div id="containerArea">
+      <!-- Container options will be dynamically added here -->
+    </div>
+  </section>
+
+  <section class="prediction-display">
+    <h2>Prediction Results</h2>
+    <div id="predictionResults">
+      <!-- Prediction results will be displayed here -->
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2024 Tea Leaf Predictor. All rights reserved.</p>
+</footer>
+<!-- Link to JavaScript file -->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
