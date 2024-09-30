@@ -2,7 +2,7 @@ from flask import Flask, request, render_template, jsonify
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 import numpy as np
-import os 
+import os   
 
 app = Flask(__name__)
 
